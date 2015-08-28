@@ -1,0 +1,68 @@
+span{
+		font-style:oblique;
+		text-decoration:underline;
+	}
+
+	span:hover{
+		color: grey;
+
+	}
+	section:hover{
+		color: lime;
+		cursor:pointer;
+	}
+
+	span.negrita {
+ 		background-color: black
+    }
+    span.cursiva {
+ 		background-color: yellow
+ 	}
+ 	
+	
+	h1 {
+		display: inline-block;
+		position: absolute;
+		top: 60px;
+		left: 30%;
+		color: white;
+      }
+      section {
+      	color:#A1B5CA;
+      }
+      body{
+      	background:url(" ../img/madera.jpg") no-repeat;
+      	background-size:  100% 100% ;
+      	color:#FFFFCC;
+
+      }
+      .datosmundiales{
+      	opacity: 0.5;
+
+      }
+      .mujer{
+      	opacity: 0.5;
+      }
+      	.imagenes {
+      		text-align: center;
+      }
+.video {
+	text-align: center;
+}
+object {
+	width: 24%;
+	height: 10em ;
+}
+
+.imagenes img {
+	height: 15em
+}
+.imag img {
+	
+	height: 20em;
+	width: 30em;
+}
+.imag {
+	text-align: center;
+	
+	}
