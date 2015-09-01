@@ -1,6 +1,0 @@
-$(function(){
-    var nuevo contenido
-	
-
-
-});
