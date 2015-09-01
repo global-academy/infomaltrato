@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Denuncias</title>
+		<link rel="stylesheet" type="text/css" href="../css/info.css">
+		<link rel="stylesheet" type="text/css" href="../css/header.css">
+		<link rel="stylesheet" type="text/css" href="../css/denuncias.css">
+		<!-- components js -->
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../bower_components/parse-js-sdk/lib/parse.js"></script>
+
+		<!-- js -->
+		<script src="../js/config.js"></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/list.js"></script>
+		<script src="../js/main.js"></script>
+
+	</head>
+	<body>
+		<div class="header">
+			<div class="menu">
+				<h1><b><i>INFOMALTRATO "M"</i></b></h1>
+				<img class="logo" src="../img/ggg.jpg">
+
+			</div>
+		     <ol>
+				<li><a href="../index.html"><b><i>Inicio</i></b></a></li>
+				<li><a href="informacion.html"><b><i>Informacion</i></b></a></li>
+				<li><a href="#"><b><i>Denuncias</i></b></a></li>
+			</ol>
+		</div><br> <br> <br>
+		<div class="denuncias">
+			<form onsubmit="crearDenuncia()" method="POST">
+				<label for="agresor"><i><b>Nombre del agresor</b></i></label>
+				<input type="text" name="denuncia_agresor" id="agresor"> <br> <br>
+				
+				<label for="victima"><i><b>Nombre de la victima</b></i></label>
+				<input type="text" name="denuncia_victima" id="victima"><br><br>
+				
+				<label for="e-mail"><i><b>e-mail</b></i></label>
+				<input type="text" name="denuncia_email" id="e-mail"><br><br>
+
+				<label for="telefono"><i><b>Telefono</b></i></label>
+				<input type="text" name="denuncia_telefono" id="telefono"><br><br>
+
+				<label for="celular"><i><b>Celular</b></i></label>
+				<input type="text" name="denuncia_celular" id="calular"><br><br>		
+				
+				<label for="agresion"><i><b>Informacion de la "agresion"</b></i></label><br><br>
+				<textarea type="text" name="denuncia_agresion" id="agresion">
+				</textarea> <br><br>
+				
+				<label><b><i> adjuntar evidencia</i></b></label>
+				<div class="adjuntar">
+					<input type="file" name="denuncia_image" id="denuncia_image_input">
+				</div>			
+				
+				<input type="submit" value="denunciar">
+			</form>
+		</div>
+	</body>
+</html>
