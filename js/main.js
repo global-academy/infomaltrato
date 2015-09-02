@@ -20,11 +20,11 @@ var crearDenuncia = function() {
 	}
 
 	var fileUploadControl = $('#denuncia_image_input')[0];
-
+	console.log(fileUploadControl.files);
 	// Verificar si hay un archivo
 	if (fileUploadControl.files.length > 0) {
 		var file = fileUploadControl.files[0];
-
+		console.log(file);
 		var fileExtension = file.name.substr(file.name.lastIndexOf('.') + 1);
 		fileExtension = fileExtension.toLowerCase();
 
@@ -35,7 +35,6 @@ var crearDenuncia = function() {
 
 		var parseFile = new Parse.File(file.name, file);
 		parseFile.save().then(function(file) {
-
 			// Una vez subido el archivo, guardar la denuncia
 			crearDenunciaFin(agresor, victima, email, agresion, telefono, celular, file);
 
