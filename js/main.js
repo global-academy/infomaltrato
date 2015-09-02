@@ -14,7 +14,7 @@ var crearDenuncia = function() {
 	var agresion = $('#agresion').val();
 	var telefono = $('#telefono').val();
 	var celular = $('#celular').val();
-	
+
 	if (agresion === '') {
 		return;
 	}
@@ -23,6 +23,7 @@ var crearDenuncia = function() {
 	console.log(fileUploadControl.files);
 	// Verificar si hay un archivo
 	if (fileUploadControl.files.length > 0) {
+
 		var file = fileUploadControl.files[0];
 		console.log(file);
 		var fileExtension = file.name.substr(file.name.lastIndexOf('.') + 1);
@@ -58,7 +59,7 @@ var crearDenunciaFin = function(agresor, victima, email, agresion, telefono, cel
 		email_victima: email,
 		descripcion: agresion,
 		telefono_fijo_victima: telefono,
-		telefono_movil_victima: celular	
+		telefono_movil_victima: celular
 	};
 
 	if (image) {
@@ -72,7 +73,7 @@ var crearDenunciaFin = function(agresor, victima, email, agresion, telefono, cel
 		// Limpiar los campos después de crear una denuncia
 		$('#denuncia_text_input').val('');
 		var fileUploadControl = $('#denuncia_image_input');
-		fileUploadControl.replaceWith(input.val('').clone(true));
+		fileUploadControl.replaceWith($('#denuncia_text_input').val('').clone(true));
 
 		alert('Tu denuncia creada, gracias por no callar el maltrato!');
 	});
