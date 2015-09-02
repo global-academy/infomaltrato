@@ -6,26 +6,30 @@
 			float: left;
 			margin-top: 2em ;
 			padding: 0 2.5%;
+				
 		}
 		.right{
-			width: 20%;
-			float: right;
+			width: 25%;
+			float: left;
+		
 		}
 		.right img{
 			width: 100%;
+				
 		}
 
 		 body{
-      	background:url("img/madera.jpg") no-repeat;
+      
       	background-size:  100% 100% ;
 
       }
+    
 
 		ol{
 				}
 		.menu {
 			border: 12px solid 	grey;
-			background:url("../img/queso.jpg") no-repeat;
+			
 			background-size: 100% 100% ;
 		}
 		ul li{
@@ -51,12 +55,12 @@
 			position: absolute;
 			top: 60px;
 			left: 30%;
-			color: black;
+			color: #FFFFCC;
 		}
 		.maltrato {
 			width: 50em ;
 			height: 22em ;
-			background-color: black;
+		
 		}
 				span.negrita{
 					background-color:grey;
@@ -71,11 +75,13 @@
 			background-color: black;
 			}
 		.pepes{
-			color: black;
+			color: #FFFFCC;
 			border: 3px solid grey;
+		
 		}
 		.lol{
 			text-align: center;
+				
 		}
 		.lol img {
 			width: 85%;
@@ -84,7 +90,7 @@
 		.tips{
 			border: 5px solid grey;
 			color: yellow;
-			background-color: black;
+			background-color: black;	
 
 		}
 		.fondo {
@@ -93,4 +99,6 @@
 			top: 0;
 			bottom: 0;
 			z-index: -10;
+				
 		}
+html{	background:url(" ../img/madera.jpg") }
