@@ -5,3 +5,19 @@
       	color:#FFFFCC;
 
       }
+      h1 {
+		display: inline-block;
+		position: absolute;
+		top: 60px;
+		left: 30%;
+		color: white;
+      }
+      section {
+      	color:#A1B5CA;
+      }
+      body{
+      	background:url(" ../img/madera.jpg") no-repeat;
+      	background-size:  100% 100% ;
+      	color:#FFFFCC;
+
+      }
