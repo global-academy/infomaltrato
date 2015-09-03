@@ -35,9 +35,9 @@ var aumentarListaDenuncias = function(denuncia) {
 	var celular = denuncia.attributes.telefono_movil_victima;
 	var agresion = denuncia.attributes.descripcion
 
-	if (denuncia.attributes.image) {
+	/*if (denuncia.attributes.image) {
 		itemContent += ' <img class="image image--small" src="' + denuncia.attributes.image._url + '">';
-	}
+	}*/
 
 	newItem.html(agresor);
 	newItem1.html(victima);
